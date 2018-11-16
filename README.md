@@ -15,9 +15,22 @@ Execute the composer require command:
 $ composer require pronko/banner-widget:dev-master
 ```
 
-# Style the Banner Widget
+Install the Pronko Banner Widget as Magento 2 module.
 
-The banner widget comes with the default template and CSS classes.
+```bash
+$ bin/magento module:enable Pronko_BannerWidget
+$ bin/magento setup:upgrade
+$ bin/magento setup:di:compile
+$ bin/magento setup:static-content:generate
+```
+
+# Usage
+
+Pronko Banner Widget can be added to an any CMS Page or CMS Widget. 
+
+# Pronko Banner Widget Styles
+
+The banner widget comes with the default template and CSS classes. There are no styles in the module.
 
 The parent container of the `showcase.phtml` template contains two css classes `.widget` and `.block-pronko-banner`.
 
