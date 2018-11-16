@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+    <widget id="pronko_banner"
+            class="Pronko\BannerWidget\Block\Banner"
+            placeholder_image="Pronko_BannerWidget::images/pronko_banner_widget.png">
+
+        <label translate="true">Pronko Banner</label>
+        <description translate="true">Banner with the Title and Subtitle</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" visible="true">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="subtitle" xsi:type="text" visible="true">
+                <label translate="true">Subtitle</label>
+            </parameter>
+            <parameter name="template" xsi:type="select" visible="true">
+                <label translate="true">Template</label>
+                <options>
+                    <option name="default" value="widget/banner/showcase.phtml" selected="true">
+                        <label translate="true">Showcase Banner Template</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+
+</widgets>
