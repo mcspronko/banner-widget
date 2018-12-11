@@ -17,7 +17,7 @@
     }
   ],
   "require": {
-    "magento/framework": "100.*|101.0.*",
+    "magento/framework": "100.*|101.*|102.*",
     "magento/module-widget": "100.*|101.*"
   },
   "autoload": {
