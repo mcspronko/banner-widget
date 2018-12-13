@@ -3,9 +3,9 @@
 ?>
 <div class="widget block-pronko-banner">
     <div class="page-header services-page-header">
-        <h1 class="title"><?= $block->getData('title'); ?></h1>
+        <h1 class="title"><?= $block->escapeHtml($block->getData('title')); ?></h1>
         <div class="subtitle">
-            <p><?= $block->getData('subtitle'); ?></p>
+            <p><?= $block->escapeHtml($block->getData('subtitle')); ?></p>
         </div>
     </div>
 </div>
